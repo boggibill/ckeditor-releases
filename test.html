@@ -1,0 +1,36 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="ckeditor.js"></script>
+        <script src="config.js"></script>
+    </head>
+    <body>
+        test<br>
+        test<br>
+        test<br>
+        test<br>
+        <div id="inline_edit" contenteditable="true">
+            test 1<br>
+            test 2<br>
+            test 3<br>
+            test 4<br>
+        </div>
+        <input type='file' name='img' size='65' id='uploadimage'> 
+        <script>
+            // Turn off automatic editor creation first.
+            CKEDITOR.disableAutoInline = true;
+            CKEDITOR.inline('inline_edit', {
+                extraPlugins: 'fastimage'
+            });
+
+            
+            
+        </script>
+    </body>
+</html>
